@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Онлайн-репетитор по английскому</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">📘 TutorPage <span class="badge">с заявками в Telegram</span></div>
+      <a class="btn btn-secondary" href="#form">Оставить заявку</a>
+    </div>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Онлайн-репетитор по английскому<br/>для школьников и студентов</h1>
+        <p>Подготовка к IELTS / SAT / школьным экзаменам и разговорная практика. Индивидуальная программа + контроль прогресса.</p>
+
+        <div class="pill-row">
+          <div class="pill">📍 Онлайн</div>
+          <div class="pill">🕒 60 минут</div>
+          <div class="pill">📈 План + прогресс</div>
+          <div class="pill">📩 Заявки в Telegram</div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#form">Записаться на пробный урок</a>
+          <a class="btn btn-secondary" href="#pricing">Посмотреть пакеты</a>
+        </div>
+
+        <div class="grid3">
+          <div class="kpi"><b>2–3 месяца</b><span>обычно до заметного результата</span></div>
+          <div class="kpi"><b>Домашка</b><span>короткая, но регулярная</span></div>
+          <div class="kpi"><b>Система</b><span>без хаоса и “угадываний”</span></div>
+        </div>
+      </div>
+
+      <div class="card" id="form">
+        <h2 class="h2-top">Оставить заявку</h2>
+        <p class="small">Заполните форму — и вам ответят в ближайшее время.</p>
+
+        <form id="leadForm" class="form">
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="tel" name="phone" placeholder="Телефон / WhatsApp" required />
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <button class="btn btn-secondary" type="button" id="whatsAppButton">Написать в WhatsApp</button>
+        </form>
+
+        <div id="ok" class="ok">✅ Заявка отправлена! Скоро с вами свяжутся.</div>
+        <div class="note">Нажимая “Отправить”, вы соглашаетесь на обработку данных для связи.</div>
+      </div>
+    </div>
+
+    <div class="card section">
+      <h2>С какими проблемами помогаем</h2>
+      <ul class="list">
+        <li>Сложная грамматика и “путаюсь во временах”</li>
+        <li>Страх говорить и мало словарного запаса</li>
+        <li>Нет системы подготовки к экзаменам</li>
+      </ul>
+
+      <h2>Как проходит обучение</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <b>Диагностика</b>
+          <div class="small">определяем уровень и цель</div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <b>План</b>
+          <div class="small">что учим каждую неделю</div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <b>Контроль</b>
+          <div class="small">прогресс + корректировка</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section" id="pricing">
+      <h2 class="h2-top">Пакеты</h2>
+
+      <div class="pricing">
+        <div class="price">
+          <h3>Start</h3>
+          <div class="money">10,000₸ / урок</div>
+          <div class="small">для начала и разгона</div>
+          <ul class="list">
+            <li>1–2 занятия/нед</li>
+            <li>домашка + проверка</li>
+            <li>чат-поддержка</li>
+          </ul>
+        </div>
+
+        <div class="price highlight">
+          <div class="tag">Рекомендуем</div>
+          <h3>Pro</h3>
+          <div class="money">15,000 ₸ / урок</div>
+          <div class="small">самый эффективный режим</div>
+          <ul class="list">
+            <li>2–3 занятия/нед</li>
+            <li>план на 4 недели</li>
+            <li>контроль прогресса</li>
+          </ul>
+        </div>
+
+        <div class="price">
+          <h3>Exam</h3>
+          <div class="money">20,000₸ / урок</div>
+          <div class="small">под экзамен (IELTS/SAT)</div>
+          <ul class="list">
+            <li>стратегии + тайминг</li>
+            <li>практика заданий</li>
+            <li>разбор ошибок</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="small footnote">company organization for TutorPage *kwbim*</p>
+
+      <div class="contact-card">
+        <div>
+          <div class="small">Контакт для WhatsApp</div>
+          <div class="phone" id="waNumber">+7 700 000 00 00</div>
+        </div>
+        <a class="btn btn-primary" id="waLink" href="#">Написать в WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      © TutorPage • Сделано для заявок и продаж онлайн-услуг
+    </div>
+  </div>
+</body>
+</html>
